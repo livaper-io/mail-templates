@@ -4,7 +4,7 @@
 ## How to use
 Firstly, you should add this package to your package.json
 
-`"outgoing-templates": "git+https://bsalperen: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@github.com/livaper-io/outgoing-templates.git#1.0.0"`
+`"outgoing-templates": "git+https://bsalperen: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@github.com/livaper-io/outgoing-templates.git#1.0.1"`
 
 After that you should add this to scripts:
 
