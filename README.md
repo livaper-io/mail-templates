@@ -4,7 +4,7 @@
 ## How to use
 Firstly, you should add this package to your package.json
 
-`"mail-templates": "git+https://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:x-oauth-basic@github.com/livaper-io/mail-templates.git#1.0.2"`
+`"mail-templates": "git+https://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:x-oauth-basic@github.com/livaper-io/mail-templates.git#tag_version"`
 
 After that you should add this to scripts:
 
