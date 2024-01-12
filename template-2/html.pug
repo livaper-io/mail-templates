@@ -116,8 +116,16 @@ head
                                                                 tbody
                                                                     tr
                                                                         td.fwm(style='width:600px;')
+                                                                            if payment_link
+                                                                                h1(style='margin:auto;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:23px;text-align:center;')
+                                                                                    | Confirm your appointment
                                                                             h1(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:20px')
-                                                                                | #{title}
+                                                                                | #{body}
+                                                                            if payment_link
+                                                                                p(style='margin-top: 10px;text-align: center;')
+                                                                                    a(href=`${payment_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #000000;background-color: #75FBD3;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
+                                                                                        span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') #{paymnet_link_label}
+
                         //if mso | IE
     //if mso | IE
       table.r-outlook.-outlook.pr-16-outlook.pl-16-outlook.-outlook(align='center' border='0' cellpadding='0' cellspacing='0' role='none' style='width:600px;' width='600')
