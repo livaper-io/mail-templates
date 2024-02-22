@@ -1,5 +1,5 @@
 # mail-templates
-
+Update
 
 ## How to use
 Firstly, you should add this package to your package.json
