@@ -1,0 +1,19 @@
+{
+  "name": "mail-templates",
+  "version": "1.0.0",
+  "description": "Update",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livaper-io/mail-templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livaper-io/mail-templates/issues"
+  },
+  "homepage": "https://github.com/livaper-io/mail-templates#readme"
+}
