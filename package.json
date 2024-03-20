@@ -1,6 +1,6 @@
 {
   "name": "mail-templates",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Update",
   "main": "index.js",
   "scripts": {
