@@ -114,9 +114,11 @@ if unsubscribe_link
                                         td(style="word-break:break-word;padding:10px 10px 19px;font-family:'Cabin',sans-serif" align='left' id='unsubscribe-td')
                                             div(style='line-height:140%;text-align:left;word-wrap:break-word' id='unsubscribe-div')
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
-                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') This email is sent to you by #{team_name}.
+                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') #{sent_by_text}.
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
                                                     span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px')
-                                                        | If you don&apos;t want to receive emails, you can update your subscription settings by
+                                                        | #{unsubscribe_text}
+                                                p(style='font-size:14px;line-height:140%;text-align:center')
+                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px')
                                                         a(href=`${unsubscribe_link}` target='_blank')
-                                                            span &nbsp;clicking here.
+                                                            span &nbsp;#{unsubscribe_button_text}
