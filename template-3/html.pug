@@ -1,6 +1,6 @@
 doctype html
 head
-    title #{title}
+    title !{title}
     meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     style(type='text/css').
@@ -77,15 +77,15 @@ head
                                                                                     h1(style='margin:auto;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:23px;text-align:center;')
                                                                                         | Confirm your appointment
                                                                                 h1(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:20px')
-                                                                                    | #{body}
+                                                                                    | !{body}
                                                                                 if payment_link
                                                                                     p(style='margin-top: 10px;text-align: center;')
                                                                                         a(href=`${payment_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
-                                                                                            span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') #{paymnet_link_label}
+                                                                                            span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') !{paymnet_link_label}
                                                                                 if form_link
                                                                                     p(style='margin-top: 10px;text-align: center;')
                                                                                         a(href=`${form_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
-                                                                                            span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:12px;line-height:16.8px') #{form_label}
+                                                                                            span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:12px;line-height:16.8px') !{form_label}
 
                             //if mso | IE
 div(style='margin:0px auto;max-width:600px;') !{content}
@@ -114,10 +114,10 @@ if unsubscribe_link
                                         td(style="word-break:break-word;padding:10px 10px 19px;font-family:'Cabin',sans-serif" align='left' id='unsubscribe-td')
                                             div(style='line-height:140%;text-align:left;word-wrap:break-word' id='unsubscribe-div')
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
-                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') #{sent_by_text}.
+                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') !{sent_by_text}.
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
                                                     span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px')
-                                                        | #{unsubscribe_text}
+                                                        | !{unsubscribe_text}
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
                                                     span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px')
                                                         a(href=`${unsubscribe_link}` target='_blank')

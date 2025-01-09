@@ -1,6 +1,6 @@
 doctype html
 head
-    title #{title}
+    title !{title}
     // [if !mso] <!
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     // <![endif]
@@ -120,11 +120,11 @@ head
                                                                                 h1(style='margin:auto;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:23px;text-align:center;')
                                                                                     | Confirm your appointment
                                                                             h1(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:20px')
-                                                                                | #{body}
+                                                                                | !{body}
                                                                             if payment_link
                                                                                 p(style='margin-top: 10px;text-align: center;')
                                                                                     a(href=`${payment_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #000000;background-color: #75FBD3;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
-                                                                                        span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') #{paymnet_link_label}
+                                                                                        span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') !{paymnet_link_label}
 
                         //if mso | IE
     //if mso | IE
@@ -286,7 +286,7 @@ head
                                                                         h2(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:14px;margin-bottom: 5px;')
                                                                             | Service
                                                                         p(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:10px')
-                                                                            | #{service_name}
+                                                                            | !{service_name}
                         //if mso | IE
     //if mso | IE
       table.r-outlook.-outlook.pr-16-outlook.pl-16-outlook.-outlook(align='center' border='0' cellpadding='0' cellspacing='0' role='none' style='width:600px;' width='600')
@@ -338,9 +338,9 @@ head
                                                                 tbody
                                                                     tr
                                                                         h2(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:14px;margin-bottom: 5px;')
-                                                                            | #{staff_title}
+                                                                            | !{staff_title}
                                                                         p(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:10px')
-                                                                            | #{staff_name}
+                                                                            | !{staff_name}
                         //if mso | IE
     //if mso | IE
       table.r-outlook.-outlook.pr-16-outlook.pl-16-outlook.-outlook(align='center' border='0' cellpadding='0' cellspacing='0' role='none' style='width:600px;' width='600')
@@ -448,7 +448,7 @@ head
                                                                         h2(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:14px;margin-bottom: 5px;')
                                                                             | Location
                                                                         p(style='margin:0px;line-height:140%;word-wrap:break-word;font-weight:normal;font-family:arial,helvetica,sans-serif;font-size:10px')
-                                                                            | #{location}
+                                                                            | !{location}
                         //if mso | IE
     //if mso | IE
       table.r-outlook.-outlook.pr-16-outlook.pl-16-outlook.-outlook(align='center' border='0' cellpadding='0' cellspacing='0' role='none' style='width:600px;' width='600')
@@ -560,12 +560,12 @@ head
                                                                                     div(style='margin: 0px; text-align: center; word-wrap: break-word; font-weight: normal; font-family: arial,helvetica,sans-serif; font-size: 13px;')
                                                                                         each line in lines
                                                                                             p(style='margin-top: 10px;')
-                                                                                                | #{line}
+                                                                                                | !{line}
                                                                                 if buttons
                                                                                     each button in buttons
                                                                                         p(style='margin-top: 10px;')
                                                                                             a(href=`${button.url}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #000000;background-color: #75FBD3;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
-                                                                                                span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') #{button.text}
+                                                                                                span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') !{button.text}
                         //if mso | IE
     //if mso | IE
       table.r-outlook.-outlook.pr-16-outlook.pl-16-outlook.-outlook(align='center' border='0' cellpadding='0' cellspacing='0' role='none' style='width:600px;' width='600')
@@ -605,7 +605,7 @@ if unsubscribe_link
                                         td(style="word-break:break-word;padding:10px 10px 19px;font-family:'Cabin',sans-serif" align='left')
                                             div(style='line-height:140%;text-align:left;word-wrap:break-word')
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
-                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') This email is sent to you by #{team_name}.
+                                                    span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px') This email is sent to you by !{team_name}.
                                                 p(style='font-size:14px;line-height:140%;text-align:center')
                                                     span(style='font-family:Raleway,sans-serif;font-size:12px;line-height:16.8px')
                                                         | If you don&apos;t want to receive emails, you can update your subscription settings by
