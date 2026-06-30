@@ -14,6 +14,14 @@ head
         .footer-bg {
             background-color: initial !important;
         }
+    style(media='screen and (prefers-color-scheme: dark)').
+        .dark-btn {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+        .dark-btn span {
+            color: #000000 !important;
+        }
     style(type='text/css').
         @media only screen and (max-width:598px){table.fwm{width:100%!important;}td.fwm{width:auto!important;}}
     style(type='text/css').
@@ -80,11 +88,11 @@ head
                                                                                     | !{body}
                                                                                 if payment_link
                                                                                     p(style='margin-top: 10px; margin-bottom:1rem;text-align:center;')
-                                                                                        a(href=`${payment_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
+                                                                                        a.dark-btn(href=`${payment_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
                                                                                             span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:14px;line-height:16.8px') !{paymnet_link_label}
                                                                                 if form_link
                                                                                     p(style='margin-top: 10px; margin-bottom:1rem;text-align:center;')
-                                                                                        a(href=`${form_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
+                                                                                        a.dark-btn(href=`${form_link}` style="box-sizing:border-box;display:inline-block;font-family:'Cabin',sans-serif;text-decoration:none;text-align:center;color: #ffffff;background-color: #000000;border-radius:20px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target='_blank')
                                                                                             span(style='display:block;padding: 6px 14px 6px;line-height:120%; font-size:12px;line-height:16.8px') !{form_label}
 
                             //if mso | IE
